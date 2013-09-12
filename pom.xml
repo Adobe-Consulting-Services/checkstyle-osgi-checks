@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.adobe.acs</groupId>
     <artifactId>checkstyle-osgi-checks</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>Checkstyle OSGi Checks</name>
     <description>Checkstyle Checks for OSGi bundles</description>
     <dependencies>
@@ -16,7 +16,7 @@
     
     <scm>
         <developerConnection>scm:git:git@github.com:Adobe-Consulting-Services/checkstyle-osgi-checks.git</developerConnection>
-      <tag>checkstyle-osgi-checks-0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <distributionManagement>
