@@ -37,15 +37,20 @@ class Utilities {
         if (aAST == null) {
             return null;
         }
-
-        if (aAST.getType() == TokenTypes.PACKAGE_DEF) {
+        
+        switch (aAST.getType()) {
+        case TokenTypes.PACKAGE_DEF:
             return aAST;
-        }
-        if (aAST.getType() == TokenTypes.CLASS_DEF) {
+            
+        case TokenTypes.CLASS_DEF:
+        case TokenTypes.INTERFACE_DEF:
+        case TokenTypes.IMPORT:
+        case TokenTypes.STATIC_IMPORT:
             return findPackage(aAST.getPreviousSibling());
+            
+        default:
+            return findPackage(aAST.getParent());
         }
-
-        return findPackage(aAST.getParent());
     }
 
 }
