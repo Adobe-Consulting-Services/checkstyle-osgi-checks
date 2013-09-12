@@ -14,6 +14,10 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    
+    <scm>
+        <developerConnection>scm:git:ssh://github.com:Adobe-Consulting-Services/checkstyle-osgi-checks.git</developerConnection>
+    </scm>
 
     <distributionManagement>
         <repository>
