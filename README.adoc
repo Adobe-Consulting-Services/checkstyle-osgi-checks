@@ -1,0 +1,12 @@
+= Checkstyle OSGi Checks
+
+This is a series of Checkstyle checks specific to working in an OSGi environment.
+
+`ExportedJavadocMethod`::
+Same as `JavadocMethod`, but allows missing JavaDoc on non-exported classes.
+
+`ExportedJavadocType`::
+Same as `JavadocType`, but allows missing JavaDoc on non-exported classes.
+
+`ExportedJavadocVariable`::
+Same as `JavadocVariable`, but allows missing JavaDoc on non-exported classes.
