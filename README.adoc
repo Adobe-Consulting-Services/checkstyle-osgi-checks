@@ -1,5 +1,7 @@
 = Checkstyle OSGi Checks
 
+image::https://travis-ci.org/Adobe-Consulting-Services/checkstyle-osgi-checks.png[]
+
 This is a series of Checkstyle checks specific to working in an OSGi environment.
 
 `ExportedJavadocMethod`::
