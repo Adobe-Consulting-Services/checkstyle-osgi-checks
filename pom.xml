@@ -5,6 +5,23 @@
     <version>0.0.3-SNAPSHOT</version>
     <name>Checkstyle OSGi Checks</name>
     <description>Checkstyle Checks for OSGi bundles</description>
+    <url>https://github.com/Adobe-Consulting-Services/checkstyle-osgi-checks</url>
+    <inceptionYear>2013</inceptionYear>
+    <licenses>
+        <license>
+          <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <organization>
+      <name>Adobe</name>
+      <url>http://www.adobe.com/</url>
+    </organization>
+    <properties>
+        <license.licenseName>apache_v2</license.licenseName>
+        <license.addJavaLicenseAfterPackage>false</license.addJavaLicenseAfterPackage>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.puppycrawl.tools</groupId>
@@ -19,14 +36,18 @@
       <tag>HEAD</tag>
   </scm>
 
-    <distributionManagement>
-        <repository>
-            <id>acs-github-releases</id>
-            <url>file:${acs.github.repo.root}/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>acs-github-snapshots</id>
-            <url>file:${acs.github.repo.root}/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+  <distributionManagement>
+      <repository>
+          <id>${releaseRepository-Id}</id>
+          <name>${releaseRepository-Name}</name>
+          <url>${releaseRepository-URL}</url>
+      </repository>
+      <snapshotRepository>
+          <id>${snapshotRepository-Id}</id>
+          <name>${snapshotRepository-Name}</name>
+          <url>${snapshotRepository-URL}</url>
+          <uniqueVersion>false</uniqueVersion>
+      </snapshotRepository>
+  </distributionManagement>
+    
 </project>
