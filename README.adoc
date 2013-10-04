@@ -1,7 +1,6 @@
 = Checkstyle OSGi Checks
 
-[![Build Status](https://travis-ci.org/Adobe-Consulting-Services/checkstyle-osgi-checks.png)](https://travis-ci.org/Adobe-Consulting-Services/checkstyle-osgi-checks)
-
+image::https://travis-ci.org/Adobe-Consulting-Services/checkstyle-osgi-checks.png[]
 
 This is a series of Checkstyle checks specific to working in an OSGi environment.
 
